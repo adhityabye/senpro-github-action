@@ -1,4 +1,4 @@
-name: Test, Build, and Deploy | Modul 02- Lab2.2 Senior Project
+name: Test, Build, and Deploy | Modul 01- Lab2.2 Senior Project
 
 on:
   push:
@@ -43,7 +43,7 @@ jobs:
             echo "Cek folder Project";
             [ ! -d "${HOME}/senpro/479192/modul02/senpro-github-action/" ] &&
             {
-              echo "Repository belum di clone.Clon...";
+              echo "Repository belum di clone. Cloning...";
               mkdir -p ~/senpro/479192/modul02;
               cd ~/senpro/479192/modul02;
               git clone git@github.com:adhityabye/senpro-github-action.git;
